@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tags",
+  "info": {
+    "name": "Tag",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "posts": {
+      "collection": "post",
+      "via": "tags",
+      "dominant": true
+    },
+    "projects": {
+      "collection": "project",
+      "via": "tags",
+      "dominant": true
+    }
+  }
+}

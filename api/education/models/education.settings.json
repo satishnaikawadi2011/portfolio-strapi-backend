@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educations",
+  "info": {
+    "name": "Education"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "timePeriod": {
+      "type": "string",
+      "required": true
+    },
+    "schoolName": {
+      "type": "string",
+      "required": true
+    },
+    "education_completed_there": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
